@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="" />
+    </header>
+    <main>
+      <secion class="calculator">
+        <div class="bill">
+          <h2>Bill</h2>
+          <div class="bill-input">
+            <img src="./images/icon-dollar.svg" alt="" />
+            <input type="number" name="" id="" placeholder="0" />
+          </div>
+        </div>
+        <div class="select-tip">
+          <h2>Select Tip %</h2>
+          <div class="tips">
+            <button class="five-percent">5%</button>
+            <button class="ten-percent">10%</button>
+            <button class="fifteen-percent">15%</button>
+            <button class="twentyFive-percent">25%</button>
+            <button class="fifty-percent">50%</button>
+            <input type="number" name="" id="" placeholder="Custom" />
+          </div>
+        </div>
+        <div class="no-of-people">
+          <div>
+            <h2>Number of People</h2>
+            <span class="error-msg"></span>
+          </div>
+
+          <div class="people-input">
+            <img src="./images/icon-person.svg" alt="" />
+            <input type="number" name="" id="" placeholder="0" />
+          </div>
+        </div>
+      </secion>
+      <section class="tip">
+        <div class="tip-amount">
+          <div class="per-person">
+            <h3>Tip Amount</h3>
+            <p>/ person</p>
+          </div>
+          <div>
+            <h2 class="amount">$0.00</h2>
+          </div>
+        </div>
+        <div class="total">
+          <div class="per-total">
+            <h3>Total</h3>
+            <p>/ person</p>
+          </div>
+          <div>
+            <h2 class="total-value">$0.00</h2>
+          </div>
+        </div>
+        <button class="reset">Reset</button>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

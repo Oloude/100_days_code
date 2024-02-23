@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'DM Sans', sans-serif; 
+    background-color: hsl(27, 66%, 92%);
+}
+main{
+    padding: 3em 1em;
+    max-width: 450px;
+    margin: 0 auto;
+}
+section.accent{
+    background-color: hsl(10, 79%, 65%);
+    border-radius: .5em;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    margin-bottom: 1em;
+}
+div.balance{
+    display: flex;
+    flex-direction: column;
+    gap: .5em
+}
+div.balance p{
+color: hsl(27, 66%, 92%);
+
+}
+div.balance h2{
+    color: hsl(33, 100%, 98%);
+    font-weight: 600;
+}
+section.expense-data{
+    background-color: hsl(33, 100%, 98%);
+    border-radius: .5em;
+    padding: 1.5em 1em;
+}
+h1{
+    color: hsl(25, 47%, 15%);
+    font-size: 1.5rem;
+    margin-bottom: 2em;
+}
+div.bars{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: .5em;
+    margin-bottom: .5em;
+    align-items: end
+}
+div.bars p{
+border-radius: 5px;
+}
+div.week-days{
+   display: grid;
+   grid-template-columns: repeat(7,1fr);
+   gap: 1em;
+   margin-bottom: 1.5em;
+}
+div.week-days p{
+    color: hsl(28, 10%, 53%);
+    place-self: center;
+    font-size: .8rem;
+  
+}
+
+
+section.total{
+    padding-top: 1.5em;
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 3px solid hsl(27, 66%, 92%);
+}
+div.total-expenses{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+div.total-expenses p{
+    color: hsl(28, 10%, 53%);
+
+}
+div.total-expenses h2{
+color: hsl(25, 47%, 15%);
+font-size: 1.7rem;
+}
+div.percent{
+    align-self: flex-end;
+    text-align: right;
+}
+div.percent h3{
+    color: hsl(25, 47%, 15%);
+    font-size: .9rem;
+}
+div.percent p{
+    color: hsl(28, 10%, 53%);
+}
+
+span.amount-display{
+    background-color: hsl(25, 47%, 15%);
+    padding: .3em;
+    color: hsl(27, 66%, 92%);
+    margin-bottom: .2em;
+    display: none;
+    font-size: .8rem;
+}

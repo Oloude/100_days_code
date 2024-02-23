@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+section.hero{
+  background-image: url('./images/bg-pattern-intro-mobile.svg'), linear-gradient(hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+   background-repeat: no-repeat;
+   background-size: 100%;
+   border-bottom-left-radius: 8em;
+   padding-top: 4em;
+   padding-inline: 1.5em;
+   position: relative;
+   padding-bottom: 10em;
+}
+.close-icon{
+    display: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    background-color: hsl(0, 0%, 100%);
+    padding: 2em 1.5em;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    gap: 2em;
+    position: absolute;
+    width: 90%;
+    top: 8em;
+}
+div.nav-link{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid hsl(240, 2%, 79%);
+}
+div.controller{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    gap: .5em;
+    margin-bottom: 1em;
+}
+div.controller p{
+    color:  hsl(208, 49%, 24%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+}
+div.gray{
+    background-color: hsl(240, 2%, 94%);
+    display: none;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+    padding-block: 1.5em;
+    
+}
+div.gray p{
+    color: hsl(207, 13%, 34%);
+    font-weight: 700;
+}
+div.nav-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+}
+button{
+   all: unset; 
+   box-sizing: border-box;
+   font-family: 'Overpass', sans-serif;
+}
+button.login{
+    color: hsl(208, 49%, 24%);
+    font-weight: 600;
+}
+button.sign-up{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    padding: .7em 1.7em;
+    border-radius: 100vw;
+    color: hsl(0, 0%, 100%);
+    background-image: linear-gradient(to right,hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+}
+div.hero-content{
+    padding-top: 7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 2.3rem;
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: .8em;
+}
+div.hero-content p{
+    color: hsl(240, 2%, 89%);
+    font-size: 1.3rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 200;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 2em;
+}
+div.hero-content-button{
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+.hero-content-button button{
+    padding: 1em 1.5em ;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 100vw;
+}
+.hero-content-button button:nth-of-type(1){
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(353, 100%, 62%);
+
+}
+.hero-content-button button:nth-of-type(2){
+    background-color: transparent;
+    border: 1px solid hsl(0, 0%, 100%);
+    color: hsl(240, 2%, 89%);
+}
+section.design-future{
+padding: 7em 1.5em;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 2em;
+margin-bottom: 15em;
+}
+section.design-future h2{
+    color: hsl(208, 49%, 24%);
+    font-size: 2rem;
+}
+div.column{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+div.column-img img{
+    width: 100%;
+}
+div.column-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+div.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+div.row h3{
+    color: hsl(208, 49%, 24%);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+div.row p{
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color: hsl(207, 13%, 34%);
+    text-align: center;
+}
+section.blue-accent{
+    background-color: hsl(208, 49%, 24%);
+    border-top-right-radius: 8em;
+    border-bottom-left-radius: 8em;
+    position: relative;
+   
+}
+div.phone{
+    position: absolute;
+    z-index: 2;
+    top: -15em;
+}
+div.phone img,
+div.circle img{
+    width: 100%;
+}
+div.accent-text{
+   position: relative;
+   z-index: 1;
+   top: -12em;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 2em;
+   padding-inline: 1.5em;
+}
+.accent-text h3{
+    font-size: 2.5rem;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-weight: 500;
+}
+.accent-text p{
+    color: hsl(240, 2%, 89%);
+    font-size: 1.2rem;
+    line-height: 1.9;
+    text-align: center;
+    font-weight: 300;
+}
+section.laptop{
+    padding-inline: 1.5em;
+    padding-block: 7em;
+}
+footer{
+    background-color:  hsl(240, 10%, 16%);
+    border-top-right-radius: 8em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 1.5em;
+}
+div.logo-footer{
+    margin-bottom: 5em;
+}
+div.product,
+div.company,
+div.connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+div.product h4,
+div.company h4,
+div.connect h4{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 2.5em;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+div.product p,
+div.company p,
+div.connect p{
+    color: hsl(240, 2%, 89%);
+    font-size: 1.2rem;
+    margin-bottom: 1.5em;
+}
+
+@media (min-width:900px) {
+    .menu, .close-icon{
+        display: none;
+    }
+    section.hero{
+        padding-inline: 6em;
+        background-image: url(/images/bg-pattern-intro-desktop.svg), linear-gradient(hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+    }
+    header{
+        justify-content: unset;
+        gap: 3em;
+    }
+    nav{
+        all: unset;
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    div.nav-link{
+        flex-direction: row;
+        border: none;
+        padding-bottom: 0;
+        gap: 3em;
+    }
+    div.product-container,
+    div.company-container,
+    div.connect-container{
+     position: relative;
+    }
+    div.product-sub,
+    div.company-sub,
+    div.connect-sub{
+        position: absolute;
+        background-color: hsl(0, 0%, 100%);
+        padding-inline: 2em;
+        gap:1em;
+        border-radius: 5px;
+    }
+    div.controller{
+        margin-bottom: 0;
+    }
+    div.controller p{
+        color: hsl(0, 0%, 100%);
+    }
+    div.nav-buttons{
+      flex-direction: row;
+      gap: 2em;
+    }
+    button.login{
+        color: hsl(0, 0%, 100%);
+    }
+    button.sign-up{
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(13, 100%, 72%);
+        background-image: unset;
+    }
+    div.column{
+        flex-direction: row;
+        padding-inline: 0;
+    }
+    div.column >div{
+        width: 50%;
+    }
+    div.one{
+        order: 2;
+    }
+    section.design-future{
+        margin-bottom: 0;
+    }
+    section.design-future div.column-text{
+        padding-left: 6em;
+    }
+    section.laptop div.column-text{
+        padding-right: 6em;
+    }
+    div.column-text{
+        justify-content: center;
+    }
+    div.row{
+        align-items: flex-start;
+    }
+    div.row h3{
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    div.row p{
+        font-size: .9rem;
+        text-align: left;
+    }
+    section.blue-accent{
+        display: flex;
+        gap: 2em;
+        justify-content: space-between;
+        margin-bottom: 4em;
+        margin-top: 4em;
+    }
+    div.accent-text{
+        position: static;
+        align-self: center;
+        align-items: flex-start;
+        width: 50%;
+    }
+    div.circle{
+        width: 30%;
+    }
+    div.accent-text h3{
+        font-size: 1.7rem;
+    }
+    div.phone{
+        top:-4em
+    }
+    div.accent-text p{
+      font-size: 1rem;
+      text-align: left;
+    }
+    footer{
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding-inline: 8em;
+    }
+    div.product, div.company,div.connect{
+        align-items: flex-start;
+    }
+    div.product h4, div.company h4,div.connect h4{
+        font-size: 1rem;
+    }
+    div.product p, div.company p,div.connect p{
+        font-size: .9rem;
+    }
+}

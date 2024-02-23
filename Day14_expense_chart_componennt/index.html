@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense chart</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="accent">
+        <div class="balance">
+          <p>My balance</p>
+          <h2>$921.48</h2>
+        </div>
+        <img src="./images/logo.svg" alt="logo" />
+      </section>
+      <section class="expense-data">
+        <h1>Spending - Last 7 days</h1>
+        <section class="bar-chart">
+          <div class="bars"></div>
+          <div class="week-days">
+            <p>mon</p>
+            <p>tue</p>
+            <p>wed</p>
+            <p>thu</p>
+            <p>fri</p>
+            <p>sat</p>
+            <p>sun</p>
+          </div>
+        </section>
+        <section class="total">
+          <div class="total-expenses">
+            <p>Total this month</p>
+            <h2>$478.33</h2>
+          </div>
+          <div class="percent">
+            <h3>+2.4%</h3>
+            <p>from last month</p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

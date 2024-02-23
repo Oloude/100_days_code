@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 94%);
+    padding: 2em 1em;
+}
+main.container{
+    background-color: hsl(0, 0%, 100%);
+    padding: 2em 1.5em;
+    border-radius: 2em;
+    border-bottom-right-radius: 7em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section.form{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 4em;
+}
+section.form div{
+    flex: 0 0 calc(33.33% - 1em);
+    display: flex;
+    flex-direction: column;
+    gap: .7em;
+}
+section.form div p{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: hsl(0, 1%, 44%);
+    font-size: .9rem;
+    
+}
+section.form div span{
+    color: hsl(0, 100%, 67%);
+    font-size: .8rem;
+}
+section.form div input{
+    border: 1px solid hsl(0, 0%, 86%);
+    padding-block: .7em;
+    padding-left: .5em;
+    border-radius: .5em;
+    outline: none;
+    color: hsl(0, 0%, 8%);
+    font-size: 1.5rem;
+    width: 100%;
+    font-weight: 700;
+    font-family: inherit;
+}
+section.form div input::placeholder{
+    color: hsl(0, 0%, 86%);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]{
+  appearance: textfield; 
+}
+
+div.rule{
+    width: 100%;
+    height: 2px;
+    background-color: hsl(0, 0%, 86%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+div.rule img{
+    background-color: hsl(259, 100%, 65%);
+    padding: .8em;
+    border-radius: 50%;
+    width: 60px;
+}
+
+section.age{
+    display: flex;
+    flex-direction: column;
+gap: .1em;
+}
+section.age div{
+    display: flex;
+    gap: .5em;
+}
+section.age div p{
+    font-weight: 800;
+    font-style: italic;
+    font-size: 4.5em;
+    margin-bottom: 0;
+}
+
+section.age div  span{
+    color: hsl(259, 100%, 65%);
+    font-weight: 800;
+    font-style: italic;
+    font-size: 4.5em;
+}
+
+@media (min-width:100px) {
+    body{
+        padding-block: 6em;
+    }
+    main.container{
+        max-width: 800px;
+        padding: 3em;
+    }
+    section.form div{
+        flex: 0 0 calc(25% - 1em);
+    }
+    div.rule{
+        justify-content: flex-end;
+    }
+    div.rule img{
+        padding: 1.5em;
+        width: 80px;
+    }
+}
+

@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+    padding: 4em 1.5em 6em;
+    position: relative;
+}
+
+section{
+    border-radius: 2em;
+    padding: 2.5em 2em;
+    background-color: hsl(213, 19%, 18%);
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+
+div.star{
+    
+    border-radius: 50%;
+    background-color: hsl(216, 12%, 16%);
+    width:60px;
+    aspect-ratio: 1/1;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.8em;
+}
+
+h1{
+    color:hsl(0, 0%, 100%);
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: .7em;
+}
+
+p.question{
+    color: hsl(217, 12%, 63%);
+    line-height: 1.5;
+    font-size: 1.175rem;
+    font-weight: 400;
+    margin-bottom: 2em;
+}
+
+div.btns-rating{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 1.7em;
+}
+
+div.btns-rating button{
+    all: unset;
+    box-sizing: border-box;
+    color: hsl(217, 12%, 63%);
+    background-color: hsl(216, 12%, 22%);
+    border-radius: 50%;
+    width: 55px;
+    aspect-ratio: 1/1;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+div.btns-rating button:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+div.btns-rating button:focus, div.btns-rating button:focus-visible, div.btns-rating button:active{
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+button.accent{
+    all:unset;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 2em;
+    text-align: center;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: .8em;
+    background-color: hsl(25, 97%, 53%);
+}
+
+button.accent:hover, button.accent:active, button.accent:focus{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.review-message-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-message{
+    background-color: hsl(216, 12%, 16%);
+    padding: .5em 1em;
+    border-radius: 1.4em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.review-message-container h2{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    font-weight: 700;
+  margin-bottom: .7em;
+}
+
+.review-message-container p{
+    color: hsl(217, 12%, 63%);
+    font-size: 1rem;
+    margin-bottom: .5em;
+    list-style: 1.7;
+}
+
+.review-message p{
+    color: hsl(25, 97%, 53%);
+    font-size: .9rem;
+    margin: 0;
+   
+}
+
+footer{
+    display: flex;
+    position: absolute;
+    bottom: 2px;
+    gap: .5em;
+    align-items: center;
+    color: hsl(217, 12%, 63%);
+}
+
+
+@media (min-width: 500px) {
+    section{
+        padding: 2em;
+    }
+    p.question{
+        margin-bottom: 1.2em;
+        font-size: 1.1rem;
+    }
+    div.star{
+        width: 50px;
+    }
+    div.btns-rating button{
+        width: 55px;
+        font-size: 1.2rem;
+    }
+    div.btns-rating{
+        gap:1.5em
+    }
+}

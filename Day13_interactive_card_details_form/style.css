@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+section.background{
+  position: relative;
+  background-image: url('images/bg-main-mobile.png');
+width: 100%;
+height: 45vh;
+background-size: cover;
+
+
+}
+section.background>img{
+    width: 100%;
+}
+
+div.card-back{
+   max-width: 400px;
+    position: absolute;
+    top:10%;
+    right: 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+div.card-back img{
+    width: 100%;
+}
+p.cvc-number{
+    position: absolute;
+    align-self: center;
+margin-right: 12%;
+color: hsl(270, 3%, 87%);
+}
+div.front-card{
+    max-width: 400px;
+    position: absolute;
+   top: 63%;
+   z-index: 2;
+   left: 4%;
+   display: flex;
+   flex-direction: column;
+   
+}
+div.front-card img{
+    width: 100%;
+}
+div.card-front-details{
+position: absolute; 
+width: 85%;
+top: 5%;
+left: 5%;
+
+}
+div.card-front-details img{
+    width: 50px;
+    margin-bottom: 3em;
+}
+
+div.card-front-details >p{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    margin-bottom: 1.5em;
+}
+div.card-front-details div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+p.card-name{
+    text-transform: uppercase;
+    color: hsl(270, 3%, 87%);
+    font-weight: 200;
+    font-size: .9rem;
+}
+p.expiry-date{
+    color: hsl(270, 3%, 87%);
+    font-size: .9rem;
+}
+
+section.form{
+    padding-top: 10em;
+    padding-inline: 1.5em;
+    padding-bottom: 3em;
+}
+
+form  div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2em;
+    gap: .5em;
+}
+label{
+    color: hsl(278, 68%, 11%);
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+form div span{
+    color: hsl(0, 100%, 66%);
+    font-size: .8rem;
+}
+form div input{
+    padding: .8em;
+    border: 1px solid  hsl(270, 3%, 87%);
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-family: inherit;
+color: hsl(270, 3%, 77%);
+outline: none;
+}
+form div input:hover, form div input:active{
+    border-color: hsl(278, 68%, 11%);
+}   
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+div.card-info{
+    display: flex;
+    gap: .5em;
+    flex-direction: row;
+}
+div.month, div.year{
+    width: 29%;
+    
+}
+div.month label{
+    text-transform: uppercase;
+}
+div.cvc{
+   width: 40%;
+}
+button{
+    all: unset;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    background-color: hsl(278, 68%, 11%);
+    padding-block: 1em;
+    border-radius: 10px;
+    color: hsl(270, 12%, 99%);
+}
+
+@media (min-width:900px) {
+    body{
+        flex-direction: row;
+    }
+    section.background{
+        height: 100vh;
+        width: 30%;
+    }
+    section.form{
+        width: 70%; 
+    }
+    form{
+        max-width: 400px;
+        margin-inline: auto;
+    }
+    div.front-card{
+        top: 15%;
+        margin-right: -10em;
+    }
+    div.card-back{
+        top: 55%;
+        right: -25%;
+    }
+    div.gratitude {
+        max-width: 400px;
+        margin-inline: auto;
+    }
+}
+
+div.gratitude{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+h1{
+    color: hsl(278, 68%, 11%);
+    text-transform: uppercase;
+}
+div.gratitude > p{
+    color: hsl(270, 3%, 87%);
+}

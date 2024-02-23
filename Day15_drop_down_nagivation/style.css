@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Epilogue', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 98%);
+}
+header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1em;
+}
+nav{
+    position: absolute;
+    width: 75%;
+   min-height: 100vh;
+   top: 0;
+   right: 0;
+   background-color: hsl(0, 0%, 99%);
+   padding: 1.5em;
+   display: none;
+   flex-direction: column;
+   gap: 1em;
+}
+nav .close-icon{
+    width: 30px;
+    align-self: flex-end;
+}
+nav .nav-list {
+display: flex;
+flex-direction: column;
+gap: 1.2em;
+margin-bottom: 1.5em;
+}
+nav .nav-list >p{
+    color: hsl(0, 0%, 41%);
+}
+nav .nav-list >p:hover{
+    color: hsl(0, 0%, 8%);
+}
+div.feature, div.company{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    color: hsl(0, 0%, 41%);
+}
+div.feature:hover, div.company:hover{
+    color: hsl(0, 0%, 8%);
+}
+
+div.feature-text, div.company-text{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+div.feature-sub{
+    padding-left: 2em;
+    
+}
+div.company-sub{
+padding-left: 2em;
+display: none;
+flex-direction: column;
+gap: 1.5em;
+margin-bottom: 1.5em;
+color: hsl(0, 0%, 41%);
+}
+div.feature-sub{
+    display: none;
+}
+div.feature-sub div{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1.5em;
+    color: hsl(0, 0%, 41%);
+}
+button.login{
+all: unset;
+box-sizing: border-box;
+width: 100%;
+text-align: center;
+margin-bottom: 1em;
+color: hsl(0, 0%, 41%);
+}
+button.login:hover{
+    color: hsl(0, 0%, 8%);
+}
+button.register{
+    all: unset;
+    box-sizing: border-box;
+    width: 100%;
+   border: 2px solid hsl(0, 0%, 41%);
+   border-radius: 10px;
+    margin-bottom: 1em;
+    text-align: center;
+    color: hsl(0, 0%, 41%); 
+    padding-block: .6em;
+}
+button.register:hover{
+color: hsl(0, 0%, 8%);
+border-color: hsl(0, 0%, 8%);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 3em;
+}
+div.hero-image{
+    margin-bottom: 3em;
+}
+div.hero-image img{
+    width: 100%;
+}
+section.content{
+    padding-inline: 1em;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1em;
+}
+section.content p{
+color: hsl(0, 0%, 41%);
+font-size: 1rem;
+text-align: center;
+line-height: 1.5;
+margin-bottom: 1.3em;
+}
+section.content button{
+    all: unset;
+    box-sizing: border-box;
+    padding: .8em 1.2em;
+   align-self: center;
+   background-color: hsl(0, 0%, 8%);
+   color: hsl(0, 0%, 98%);
+   border-radius: 10px;
+   font-size: 1rem;
+   margin-bottom: 3em;
+}
+section.content button:hover{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
+}
+section.content div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width:900px) {
+    header{
+        padding-inline: 3em;
+    }
+    main{
+        flex-direction: row-reverse;
+        max-width: 1200px;
+        gap: 7em;
+    }
+    header{
+        justify-content: unset;
+        gap: 2em;
+        align-items: center;
+    }
+    nav{
+        all: unset;
+        display: flex !important;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+    nav .nav-list{
+        flex-direction: row;
+        margin-bottom: 0;
+        align-items: center;
+    }
+    nav .authenticate{
+        display: flex;
+        gap: 1em;
+    }
+    nav .authenticate button{
+        margin-bottom: 0;
+    }
+    div.feature, div.company{
+        all: unset;
+        position: relative;
+    }
+    div.feature-sub, div.company-sub{
+        position: absolute ;
+        top: 2em;
+        background-color: white;
+        padding: 1em;
+        border-radius: 10px;
+        display: flex ;
+        flex-direction: column;
+        gap: 1em;
+        right:.2em
+    }
+    div.company-sub, div.feature-sub div{
+        font-size: .9rem;
+    }
+    div.company-sub,
+    div.feature-sub div{
+        margin-bottom: 0;
+    }
+    button.register{
+        padding-inline: 1em;
+    }
+    div.hero-image{
+        max-height: 80vh;
+    }
+    div.hero-image img{
+        height: 100%;
+        display: block;
+    }
+    .menu, .close-icon{
+        display: none;
+    }
+    section.content{
+        padding-top: 10em;
+    }
+    h1{
+        font-size: 3rem;
+        text-align: left;
+    }
+    section.content p{
+text-align: left;
+    }
+    section.content button{
+        align-self: flex-start;
+        margin-bottom: 5em;
+    }
+    
+}

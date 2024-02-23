@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time tracking Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="name-card">
+        <div class="name">
+          <img src="./images/image-jeremy.png" alt="" />
+          <div>
+            <p>Report for</p>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
+        <div class="range">
+          <p id="daily" class="daily">Daily</p>
+          <p class="weekly" id="weekly">Weekly</p>
+          <p class="monthly" id="monthly">Monthly</p>
+        </div>
+      </section>
+
+      <section class="work-card">
+        <img src="./images/icon-work.svg" alt="" />
+        <div>
+          <div class="work">
+            <h3>Work</h3>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="hours">
+            <h2 id="work">32hrs</h2>
+            <p>Last week - <span data-activty="work">36hrs</span></p>
+          </div>
+        </div>
+      </section>
+      <section class="play-card">
+        <img src="./images/icon-play.svg" alt="" />
+        <div>
+          <div class="play">
+            <h3>Play</h3>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="hours">
+            <h2 id="play">10hrs</h2>
+            <p>Last week -<span data-activty="play">8hrs</span></p>
+          </div>
+        </div>
+      </section>
+      <section class="study-card">
+        <img src="./images/icon-study.svg" alt="" />
+        <div>
+          <div class="study">
+            <h3>Study</h3>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="hours">
+            <h2 id="study">4hrs</h2>
+            <p>Last week -<span data-activty="study">7hrs</span></p>
+          </div>
+        </div>
+      </section>
+      <section class="exercise-card">
+        <img src="./images/icon-exercise.svg" alt="" />
+        <div>
+          <div class="exercise">
+            <h3>Exercise</h3>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="hours">
+            <h2 id="exercise">4hrs</h2>
+            <p>Last week -<span data-activty="exercise">5hrs</span></p>
+          </div>
+        </div>
+      </section>
+      <section class="social-card">
+        <img src="./images/icon-social.svg" alt="" />
+        <div>
+          <div class="social">
+            <h3>Social</h3>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="hours">
+            <h2 id="social">5hrs</h2>
+            <p>Last week -<span data-activty="social">10hrs</span></p>
+          </div>
+        </div>
+      </section>
+      <section class="self-card">
+        <img src="./images/icon-self-care.svg" alt="" />
+        <div>
+          <div class="self">
+            <h3>Self Care</h3>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="hours">
+            <h2 id="self">2hrs</h2>
+            <p>Last week -<span data-activty="self"> 2hrs</span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

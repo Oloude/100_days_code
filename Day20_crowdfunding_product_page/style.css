@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Commissioner', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+}
+section.hero{
+    height: 60vh;
+    padding-top: 2em;
+    padding-inline: 1.5em;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(./images/image-hero-mobile.jpg);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.close-icon{
+    display: none;
+}
+nav{
+    display: none;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-block: .5em;
+    background-color: white;
+    position: absolute;
+margin-top: 3em;
+width: 100%;
+}
+nav a{
+    text-decoration: none;
+    padding-left: 1.5em;
+    padding-block: 1.5em;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 0%);
+    border-bottom: 1px solid hsl(0, 0%, 96%);
+}
+nav a:nth-of-type(3){
+    border-bottom: 0;
+}
+section.title{
+    background-color: white;
+    border-radius: 10px;
+    padding: 2em 1.5em;
+    margin: 0 1.5em;
+    margin-top: -5em;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+    
+}
+section.title >img{
+    align-self: center;
+    margin-top: -3.7em;
+    margin-bottom: 2em;
+}
+h1{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: .5em;
+}
+section.title >p{
+    text-align: center;
+    font-size: 1rem;
+    color: hsl(0, 0%, 65%);
+    line-height: 1.7;
+    margin-bottom: 1.5em;
+}
+section.title >div{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+div.back{
+    background-color:  hsl(176, 50%, 47%);
+    color: white;
+    padding: 1em 2em;
+    font-size: 1rem;
+    border-radius: 100vw;
+    font-weight: 700;
+}
+div.back:hover, div.back:active{
+    background-color: hsl(176, 72%, 28%);
+}
+div.bookmark{
+    display: flex;
+
+}
+div.bookmark p{
+    display: none;
+}
+section.stats, section.project-content{
+    background-color: white;
+    border-radius: 10px;
+    padding: 2em 1.5em;
+    margin: 0 1.5em;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+}
+div.stats-list{
+    align-self: center;
+}
+div.stats-list > div{
+    padding-bottom: 1.5em;
+margin-bottom: 1em;
+border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+div.stats-list > div h2{
+    font-size: 2rem;
+    margin-bottom: .4em;
+text-align: center;
+}
+div.stats-list > div p{
+    color: hsl(0, 0%, 65%);
+    font-size: 1.1rem;
+    text-align: center;
+}
+div.stats-list > div:nth-of-type(3){
+border-bottom: 0;
+}
+div.range{
+    width: 100%;
+    height: 10px;
+    border-radius: 100vw;
+    background-color: hsl(0, 0%, 95%);
+}
+div.range >div{
+    width: 70%;
+    height: 10px;
+    border-radius: 100vw;
+    background-color: hsl(176, 50%, 47%);
+}
+section.project-content> h3{
+font-size: 1.5rem;
+margin-bottom: 2em;
+}
+section.project-content > p{
+    color: hsl(0, 0%, 60%);
+    line-height: 1.7;
+    font-size: 1rem;
+    margin-bottom: 1.5em;
+}
+section.project-content > div{
+    border: 1px solid hsl(0, 0%, 75%);
+    border-radius: 10px;
+    margin-bottom: 1em;
+    padding: 1.5em;
+}
+div.heading{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    margin-bottom: 1.5em;
+}
+div.heading h4{
+    font-size: 1.1rem;
+}
+div.heading h4.accent{
+    color: hsl(176, 50%, 47%);
+    font-weight: 500;
+}
+section.project-content > div p{
+    color: hsl(0, 0%, 50%);
+    line-height: 1.7;
+    font-size: 1rem;
+    margin-bottom: 1.5em;
+}
+div.project > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+div.project > div  h3{
+    font-size: 1.5rem;
+}
+div.project > div h3 span{
+    font-size: .9rem;
+    color: hsl(0, 0%, 50%);
+    font-weight: 400;
+}
+button{
+    all: unset;
+    box-sizing: border-box;
+}
+div.project > div button{
+    background-color: hsl(176, 50%, 47%);
+    padding: 1em 1.5em;
+    border-radius: 100vw;
+    color: white;
+    align-self: flex-start;
+}
+div.project > div button:hover{
+    background-color: hsl(176, 72%, 28%);
+}
+div.mahogany > div.heading h4{
+    color: hsl(0, 0%, 50%);
+}
+div.mahogany > div.heading h4.accent{
+color: hsl(176, 50%, 77%);
+}
+div.mahogany > div h3{
+    color: hsl(0, 0%, 50%);
+}
+div.mahogany > div button{
+    background-color: hsl(0, 0%, 80%);
+}
+section.modal{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-inline: 1.5em;
+    padding: 2em 1.5em;
+}
+
+section.modal >p{
+    color: hsl(0, 0%, 50%);
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+section.modal > div{
+    border: 1px solid hsl(0, 0%, 90%);
+    border-radius: 10px;
+    padding: 1.5em 1em;
+    margin-bottom: 1em;
+}
+section.modal div.close-modal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+    border: none;
+}
+div.circle{
+    border: 1px solid hsl(0, 0%, 90%);
+    width: 25px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.circle-inner{
+    display: none;
+    border: 1px solid hsl(0, 0%, 90%);
+    width: 15px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: hsl(176, 50%, 47%);
+}
+div.sub-modal-title{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    gap: .3em;
+}
+div.m-title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+}
+div.m-title h4{
+    font-size: 1.1rem;
+}
+div.m-title h4.accent{
+    color: hsl(176, 50%, 47%);
+    font-weight: 500;
+}
+div.content   h3{
+    font-size: 1.5rem;
+}
+div.content{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2em;
+}
+div.content h3 span{
+    font-size: .9rem;
+    color: hsl(0, 0%, 50%);
+    font-weight: 400;
+}
+div.content p{
+    color: hsl(0, 0%, 50%);
+    line-height: 1.5;
+    
+}
+div.m-mahogany  div.m-title  h4{
+    color: hsl(0, 0%, 50%);
+}
+div.m-mahogany  div.m-title h4.accent{
+color: hsl(176, 50%, 77%);
+}
+div.m-mahogany  div.content h3{
+    color: hsl(0, 0%, 50%);
+}
+section.thank{
+    background-color: white;
+    border-radius: 10px;
+    padding: 3em 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin: 1em 1.5em;
+    align-items: center;
+}
+section.thank img{
+    
+    width: 70px;
+}
+section.thank h2{
+    font-size: 1.4rem;
+}
+section.thank p{
+    font-size: 1.1rem;
+    color: hsl(0, 0%, 50%);
+    line-height: 1.7;
+    text-align: center;
+}
+section.thank button{
+padding: 1em 2em;
+color: white;
+font-size: 1rem;
+border-radius: 100vw;
+font-weight: 700;
+
+    background-color: hsl(176, 50%, 47%);
+}

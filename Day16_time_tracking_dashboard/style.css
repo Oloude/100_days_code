@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(226, 43%, 10%);
+    padding: 2em 1em;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    gap: 1.5em;
+    max-width: 500px;
+    margin: 0 auto;
+}
+section{
+    border-radius: 1em;
+}
+section.name-card{
+    background-color: hsl(235, 46%, 20%);
+}
+div.name{
+    display: flex;
+    gap: 1em;
+    padding: 2em 1.5em;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+div.name img{
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+div.name div{
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+}
+div.name p{
+    color: hsl(236, 100%, 87%);
+    font-size: .9rem;
+}
+h1{
+    font-weight: 300;
+    color: white;
+}
+div.range{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1.5em;
+    padding-bottom: 1.5em;
+}
+div.range p{
+    color: hsl(235, 45%, 61%);
+}
+div.range p:active{
+    color: hsl(236, 100%, 87%);
+}
+section.work-card,
+section.play-card,
+section.study-card,
+section.exercise-card,
+section.social-card,
+section.self-card{
+    display: flex;
+    flex-direction: column;
+}
+section.work-card >img,
+section.play-card >img,
+section.study-card >img,
+section.exercise-card >img,
+section.social-card >img,
+section.self-card >img{
+    align-self: flex-end;
+    width: 70px;
+}
+section.exercise-card >img{
+width: 95px;
+}
+section.social-card >img{
+    width: 50px;
+}
+section.work-card >div,
+section.play-card >div,
+section.study-card >div,
+section.exercise-card >div,
+section.social-card >div,
+section.self-card >div{
+    background-color: hsl(235, 46%, 20%);
+   margin-top: -2em;
+    border-radius: 1em;
+    padding: 1.5em;
+}
+div.work,
+div.play,
+div.study,
+div.exercise,
+div.social,
+div.self{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .7em;
+    align-items: center;
+}
+div.work h3,
+div.play h3,
+div.study h3,
+div.exercise h3,
+div.social h3,
+div.self h3{
+    font-size: 1rem;
+    color: white;
+}
+div.hours{
+    display:  flex;
+    justify-content: space-between;
+}
+div.hours h2{
+    font-weight: 300;
+    color: white;
+}
+div.hours p{
+    color: hsl(236, 100%, 87%);
+    font-size: .8rem;
+}
+
+section.work-card{
+    background-color: hsl(15, 100%, 70%);
+}
+section.play-card{
+    background-color: hsl(195, 74%, 62%);
+}
+section.study-card{
+    background-color: hsl(348, 100%, 68%);
+}
+section.exercise-card{
+    background-color: hsl(145, 58%, 55%);
+}
+section.social-card{
+    background-color: hsl(264, 64%, 52%);
+}
+section.self-card{
+    background-color: hsl(43, 84%, 65%);
+}
+
+@media (min-width: 900px) {
+    body{
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+    }
+    main{
+        max-width: 950px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, minmax(100px,180px));
+    }
+    section.name-card{
+        grid-row: 1/-1;
+        grid-column: 1/2;
+    }
+    div.name{
+        flex-direction: column;
+        gap: 2em;
+        padding-bottom: 3em;
+    }
+    div.range{
+        flex-direction: column;
+        gap: 1.5em;
+    }
+    section.work-card >div,
+    section.play-card >div,
+    section.study-card >div,
+    section.exercise-card >div,
+    section.social-card >div,
+    section.self-card >div{
+    
+        margin-top: auto;
+    }
+    div.hours{
+        flex-direction: column;
+        gap: 1em;
+    }
+    div.hours h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: .8rem;
+    }
+    section.work-card >img,
+section.play-card >img,
+section.study-card >img,
+section.social-card >img
+{
+    width: 35px;
+}
+section.exercise-card >img{
+    width: 40px;
+}
+section.social-card >img{
+    width: 25px;
+}
+section.self-card >img{
+    width: 30px;
+}
+}

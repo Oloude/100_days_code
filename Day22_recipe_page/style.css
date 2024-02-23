@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(30, 54%, 90%);
+    padding: 4em 1.5em;
+}
+section.recipe{
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5em ;
+    border-radius: 1em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+div.recipe-image{
+    margin-bottom: 1.5em;
+    
+}
+div.recipe-image img{
+display: block;
+max-width: 100%;
+max-height: auto;
+border-radius: 10px;
+}
+h1{
+    margin-bottom: .5em;
+    font-family: 'Young Serif', serif;
+}
+p{
+    font-size: 1rem;
+    margin-bottom: 2em;
+    color: hsl(24, 5%, 18%);
+    line-height: 1.5;
+}
+div.preparation-time{
+    background-color: hsl(330, 100%, 98%);
+    padding: 1.5em;
+    padding-left: 1.5em;
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+div.preparation-time h3{
+    font-size: 1.2rem;
+    color: hsl(332, 51%, 32%);
+    margin-bottom: .5em;
+}
+div.preparation-time ul{
+    padding-left: 2em;
+}
+div.preparation-time li{
+    color: hsl(30, 10%, 34%);
+    font-size: 1rem;
+    margin-bottom: .7em;
+    padding-left: 1em;
+}
+h2{
+    color: hsl(14, 45%, 36%);
+    font-family: 'Young Serif', serif;
+   font-size: 1.7rem;
+   margin-bottom: 1.1em;
+   font-weight: 500;
+}
+div.ingredients{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+div.ingredients ul{
+    padding-left: 2.5em;
+}
+div.ingredients li{
+    padding-left: 1em;
+    margin-bottom: 1em;
+    font-size: 1rem;
+    color: hsl(30, 10%, 34%);
+}
+div.instructions{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+div.instructions ol{
+    padding-left: 2em;
+   
+    
+}
+div.instructions li{
+    color: hsl(30, 10%, 34%);
+margin-bottom: 1em;
+line-height: 1.5;
+padding-left: 1em;
+}
+div.nutrition p{
+color: hsl(30, 10%, 34%);
+}
+div.nutrition > div{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-block: 1em;
+}
+div.nutrition > div:nth-of-type(4){
+    border-bottom: none;
+}
+div.nutrition > div p{
+    margin-bottom: 0;
+}
+div.nutrition > div p:nth-of-type(2){
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+@media (min-width:500px) {
+    div.nutrition > div{
+        padding-inline: 2em;
+       justify-content: unset;
+       
+    }
+    div.nutrition > div p{
+        flex: 1;
+    }
+}
+
